@@ -1,5 +1,4 @@
     
-
     <div id='footer'>
       <hr>
       <?php print 'Copyright ' . date('y'); ?>
@@ -24,9 +23,10 @@
         $( "#dob" ).datepicker({
           changeMonth: true,
           changeYear: true,
-          yearRange: "-120: +0"
+          yearRange: "-120: +0",
+          dateFormat: "yy-mm-dd"
+        });
       });
-      } );
   </script>
   </body>
 </html>
