@@ -10,10 +10,10 @@
 
     //Remote Connection
 
-    $host = '85.10.205.173:3306';
-    $db = 'attendee_db';
-    $user = 'kareem@localhost';
-    $pass = 'I^#jmu!$XHHnMFK0yQ2a&PpeTt2s^2';
+    $host = 'sql3.freesqldatabase.com';
+    $db = 'sql3374747';
+    $user = 'sql3374747';
+    $pass = 'mZKjBd5YZ3';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host = $host;dbname = $db; charset = $charset";
