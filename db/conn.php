@@ -1,7 +1,18 @@
 <?php
-    $host = 'localhost';
-    $db = 'attendance_db';
-    $user = 'root';
+
+    //Development Connection
+
+    // $host = 'localhost';
+    // $db = 'attendance_db';
+    // $user = 'root';
+    // $pass = '';
+    // $charset = 'utf8mb4';
+
+    //Remote Connection
+
+    $host = 'db4free.net';
+    $db = 'attendee_db';
+    $user = 'kareem@localhost';
     $pass = '';
     $charset = 'utf8mb4';
 
