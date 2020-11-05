@@ -10,7 +10,7 @@
 
     //Remote Connection
 
-    $host = 'db4free.net';
+    $host = '85.10.205.173:3306';
     $db = 'attendee_db';
     $user = 'kareem@localhost';
     $pass = '';
