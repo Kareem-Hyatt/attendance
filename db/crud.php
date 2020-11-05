@@ -11,7 +11,7 @@
         public function insertAttendees($fname, $lname, $dob, $email, $contact, $specialty){
             try 
             {
-                $sql = "INSERT INTO attendance_db.attendee (`firstname`, `lastname`, `dateofbirth`, `emailaddress`, `contactnumber`, `specialty_id`) 
+                $sql = "INSERT INTO attendee (`firstname`, `lastname`, `dateofbirth`, `emailaddress`, `contactnumber`, `specialty_id`) 
                 VALUES (:fname, :lname, :dob, :email, :contact, :specialty)";
                 
                 $stmt = $this->db->prepare($sql);
@@ -35,7 +35,7 @@
         public function getAttendees(){
             try
             {  
-                 $sql = "SELECT * FROM attendance_db.attendee a INNER JOIN attendance_db.specialties s ON a.specialty_id = s.specialty_id";
+                 $sql = "SELECT * FROM attendee a INNER JOIN specialties s ON a.specialty_id = s.specialty_id";
                 $result = $this->db->query($sql);
 
                 return $result;
@@ -50,7 +50,7 @@
         public function getSpecialties(){
             try
             {
-                $sql = "SELECT * FROM attendance_db.specialties";
+                $sql = "SELECT * FROM specialties";
                 $result = $this->db->query($sql);
 
                 return $result;
@@ -65,7 +65,7 @@
         public function getAttendeeDetails($id){
             try
             {
-                $sql = "SELECT * FROM attendance_db.attendee a INNER JOIN attendance_db.specialties s 
+                $sql = "SELECT * FROM attendee a INNER JOIN specialties s 
                 ON a.specialty_id = s.specialty_id WHERE attendee_id = :id";
 
                 $stmt = $this->db->prepare($sql);
@@ -85,7 +85,7 @@
         public function editAttendee($id, $fname, $lname, $dob, $email, $contact, $specialty){
             try
             {
-                $sql = "UPDATE attendance_db.attendee SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,
+                $sql = "UPDATE attendee SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,
                 `emailaddress`=:email,`contactnumber`=:contact,`specialty_id`=:specialty WHERE attendee_id = :id";
                 
                 $stmt = $this->db->prepare($sql);
@@ -112,7 +112,7 @@
         public function deleteAttendee($id){
             try
             {
-                $sql = "DELETE FROM attendance_db.attendee WHERE attendee_id = :id";
+                $sql = "DELETE FROM attendee WHERE attendee_id = :id";
                 $stmt = $this->db->prepare($sql);
                 $stmt->bindparam(':id',$id);
                 $stmt->execute();
