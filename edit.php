@@ -6,7 +6,8 @@
     $results = $crud->getSpecialties();
     if(!isset($_GET['id']))
     {
-        echo 'ERROR';
+        include 'includes/errormessage.php';
+        header('Location: viewrecords.php');
     }
     else
     {

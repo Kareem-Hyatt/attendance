@@ -11,11 +11,11 @@
 <form method='post' action='success.php'>
     <div class="form-group">
         <label for="firstname">First Name</label>
-        <input type="text" class="form-control" id="firstname" placeholder="Enter First Name" name="firstname">
+        <input required type="text" class="form-control" id="firstname" placeholder="Enter First Name" name="firstname">
     </div>
     <div class="form-group">
         <label for="lastname">Last Name</label>
-        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
+        <input required type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
     </div>
     <div class="form-group">
         <label for="dob">Date of Birth</label>
@@ -35,7 +35,7 @@
     </div>
     <div class="form-group">
         <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter Your Email Address">
+        <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter Your Email Address">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">

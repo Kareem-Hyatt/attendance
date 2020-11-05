@@ -18,12 +18,14 @@
             header('Location: viewrecords.php');
         }
         else{
-            echo 'error';
+            include 'includes/errormessage.php';
+        // echo 'error';
         }
     }
     else
     {
-        echo 'error';
+        include 'includes/errormessage.php';
+        // echo 'error';
     }
 
 ?>
