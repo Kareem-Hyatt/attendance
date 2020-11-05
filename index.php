@@ -44,7 +44,8 @@
         <small id="phoneHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small>
     </div>
     
-    <button type="submit" name='submit' class="btn btn-primary">Submit</button>
+    <a href="viewrecords.php" class="btn btn-default btn">Back to List</a>
+    <button type="submit" name='submit' class="btn btn-success">Save Changes</button>
 </form>
 
 <?php require_once 'includes/footer.php'; ?>
