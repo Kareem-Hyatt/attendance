@@ -13,7 +13,7 @@
     $host = '85.10.205.173:3306';
     $db = 'attendee_db';
     $user = 'kareem@localhost';
-    $pass = '';
+    $pass = 'I^#jmu!$XHHnMFK0yQ2a&PpeTt2s^2';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host = $host;dbname = $db; charset = $charset";
