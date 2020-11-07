@@ -8,12 +8,20 @@
     // $pass = '';
     // $charset = 'utf8mb4';
 
-    //Remote Connection
+    //Remote Connection freesqldatabase.com
 
-    $host = 'sql3.freesqldatabase.com';
-    $db = 'sql3374747';
-    $user = 'sql3374747';
-    $pass = 'mZKjBd5YZ3';
+    // $host = 'sql3.freesqldatabase.com';
+    // $db = 'sql3374747';
+    // $user = 'sql3374747';
+    // $pass = 'mZKjBd5YZ3';
+    // $charset = 'utf8mb4';
+
+    //Remote Connection de4free.net
+
+    $host = 'db4free.net';
+    $db = 'attendee_db';
+    $user = 'kareem@localhost';
+    $pass = '';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host = $host;dbname = $db; charset = $charset";
