@@ -11,7 +11,7 @@
         public function insertAttendees($fname, $lname, $dob, $email, $contact, $specialty){
             try 
             {
-                $sql = "INSERT INTO attendee (`firstname`, `lastname`, `dateofbirth`, `emailaddress`, `contactnumber`, `specialty_id`) 
+                $sql = "INSERT INTO attendee (firstname, lastname, dateofbirth, emailaddress, contactnumber, specialty_id) 
                 VALUES (:fname, :lname, :dob, :email, :contact, :specialty)";
                 
                 $stmt = $this->db->prepare($sql);
@@ -85,8 +85,8 @@
         public function editAttendee($id, $fname, $lname, $dob, $email, $contact, $specialty){
             try
             {
-                $sql = "UPDATE attendee SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,
-                `emailaddress`=:email,`contactnumber`=:contact,`specialty_id`=:specialty WHERE attendee_id = :id";
+                $sql = "UPDATE attendee SET firstname=:fname,lastname=:lname,dateofbirth=:dob,
+                emailaddress=:email,contactnumber=:contact,specialty_id=:specialty WHERE attendee_id = :id";
                 
                 $stmt = $this->db->prepare($sql);
 
