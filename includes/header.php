@@ -25,6 +25,6 @@
         </div>
       </div>
     </nav>
-  <div class="container-fluid">
+  <div class="container">
     
   <br/>
