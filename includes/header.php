@@ -27,4 +27,4 @@
     </nav>
   <div class="container">
     
-  <hr/>
+  <br/>
