@@ -16,7 +16,7 @@
     // $pass = 'mZKjBd5YZ3';
     // $charset = 'utf8mb4';
 
-    //Remote Connection de4free.net
+    //Remote Connection de4free.net - alternate database
 
     $host = 'db4free.net';
     $db = 'attendee_db';
@@ -24,7 +24,7 @@
     $pass = 'I^#jmu!$XHHnMFK0yQ2a&PpeTt2s^2';
     $charset = 'utf8mb4';
 
-    $dsn = "mysql:host = $host;dbname = $db; charset = $charset";
+    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
     try{
         $pdo = new pdo($dsn, $user, $pass);
@@ -32,6 +32,7 @@
         // echo 'Database Connected Successfully';
     }
     catch(PDOException $e){
+        echo $e->getMessage();
         throw new PDOException($e->getMessage());
     }
 
